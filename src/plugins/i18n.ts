@@ -5,9 +5,9 @@ import { type I18n, createI18n } from "vue-i18n";
 
 // element-plus国际化
 import enLocale from "element-plus/lib/locale/lang/en";
-import zhLocale from "element-plus/lib/locale/lang/zh-cn";
+import viLocale from "element-plus/lib/locale/lang/vi";
 
-function siphonI18n(prefix = "zh-CN") {
+function siphonI18n(prefix = "vi") {
   return Object.fromEntries(
     Object.entries(
       import.meta.glob("../../locales/*.y(a)?ml", { eager: true })
@@ -20,8 +20,8 @@ function siphonI18n(prefix = "zh-CN") {
 
 export const localesConfigs = {
   zh: {
-    ...siphonI18n("zh-CN"),
-    ...zhLocale
+    ...siphonI18n("vi"),
+    ...viLocale
   },
   en: {
     ...siphonI18n("en"),
@@ -47,9 +47,9 @@ export function transformI18n(message: any = "") {
   }
 
   const key = message.match(/(\S*)\./)?.[1];
-  if (key && Object.keys(siphonI18n("zh-CN")).includes(key)) {
+  if (key && Object.keys(siphonI18n("vi")).includes(key)) {
     return i18n.global.t.call(i18n.global.locale, message);
-  } else if (!key && Object.keys(siphonI18n("zh-CN")).includes(message)) {
+  } else if (!key && Object.keys(siphonI18n("vi")).includes(message)) {
     // 兼容非嵌套形式的国际化写法
     return i18n.global.t.call(i18n.global.locale, message);
   } else {
@@ -63,7 +63,7 @@ export const $t = (key: string) => key;
 export const i18n: I18n = createI18n({
   legacy: false,
   locale:
-    storageLocal().getItem<StorageConfigs>("responsive-locale")?.locale ?? "zh",
+    storageLocal().getItem<StorageConfigs>("responsive-locale")?.locale ?? "vi",
   fallbackLocale: "en",
   messages: localesConfigs
 });

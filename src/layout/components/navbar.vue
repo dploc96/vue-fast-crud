@@ -58,16 +58,16 @@ const { t, locale, translationCh, translationEn } = useTranslationLang();
         <template #dropdown>
           <el-dropdown-menu class="translation">
             <el-dropdown-item
-              :style="getDropdownItemStyle(locale, 'zh')"
-              :class="['dark:!text-white', getDropdownItemClass(locale, 'zh')]"
+              :style="getDropdownItemStyle(locale, 'vi')"
+              :class="['dark:!text-white', getDropdownItemClass(locale, 'vi')]"
               @click="translationCh"
             >
               <IconifyIconOffline
-                class="check-zh"
-                v-show="locale === 'zh'"
+                class="check-vi"
+                v-show="locale === 'vi'"
                 :icon="Check"
               />
-              简体中文
+              Tiếng Việt
             </el-dropdown-item>
             <el-dropdown-item
               :style="getDropdownItemStyle(locale, 'en')"
@@ -167,7 +167,7 @@ const { t, locale, translationCh, translationEn } = useTranslationLang();
     padding: 5px 40px;
   }
 
-  .check-zh {
+  .check-vi {
     position: absolute;
     left: 20px;
   }
