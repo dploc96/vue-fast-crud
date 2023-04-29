@@ -57,7 +57,7 @@ initStorage();
 const { dataTheme, dataThemeChange } = useDataThemeChange();
 dataThemeChange();
 const { title, getDropdownItemStyle, getDropdownItemClass } = useNav();
-const { locale, translationCh, translationEn } = useTranslationLang();
+const { locale, translationVi, translationEn } = useTranslationLang();
 
 const ruleForm = reactive({
   username: "admin",
@@ -128,13 +128,13 @@ watch(imgCode, value => {
         <template #dropdown>
           <el-dropdown-menu class="translation">
             <el-dropdown-item
-              :style="getDropdownItemStyle(locale, 'zh')"
-              :class="['dark:!text-white', getDropdownItemClass(locale, 'zh')]"
-              @click="translationCh"
+              :style="getDropdownItemStyle(locale, 'vi')"
+              :class="['dark:!text-white', getDropdownItemClass(locale, 'vi')]"
+              @click="translationVi"
             >
               <IconifyIconOffline
-                class="check-zh"
-                v-show="locale === 'zh'"
+                class="check-vi"
+                v-show="locale === 'vi'"
                 :icon="Check"
               />
               简体中文
@@ -311,7 +311,7 @@ watch(imgCode, value => {
     padding: 5px 40px;
   }
 
-  .check-zh {
+  .check-vi {
     position: absolute;
     left: 20px;
   }

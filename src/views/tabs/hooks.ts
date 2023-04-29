@@ -19,7 +19,7 @@ export function useDetail() {
         query: { id: String(index) },
         meta: {
           title: {
-            zh: `No.${index} - 详情信息`,
+            vi: `No.${index} - 详情信息`,
             en: `No.${index} - DetailInfo`
           },
           // 最大打开标签数
@@ -35,7 +35,7 @@ export function useDetail() {
         params: { id: String(index) },
         meta: {
           title: {
-            zh: `No.${index} - 详情信息`,
+            vi: `No.${index} - 详情信息`,
             en: `No.${index} - DetailInfo`
           }
         }

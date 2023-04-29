@@ -19,7 +19,7 @@ function siphonI18n(prefix = "vi") {
 }
 
 export const localesConfigs = {
-  zh: {
+  vi: {
     ...siphonI18n("vi"),
     ...viLocale
   },

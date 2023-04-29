@@ -23,7 +23,7 @@ buttons:
   hscontentFullScreen: Content FullScreen
   hscontentExitFullScreen: Content ExitFullScreen
 menus:
-  hshome: Home
+  hshome: Trang chủ
   hslogin: Login
   hsempty: Empty Page
   hssysManagement: System Manage

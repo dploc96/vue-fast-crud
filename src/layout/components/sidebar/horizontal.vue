@@ -13,7 +13,7 @@ import Check from "@iconify-icons/ep/check";
 
 const menuRef = ref();
 
-const { t, route, locale, translationCh, translationEn } =
+const { t, route, locale, translationVi, translationEn } =
   useTranslationLang(menuRef);
 const {
   title,
@@ -77,14 +77,14 @@ watch(
         <template #dropdown>
           <el-dropdown-menu class="translation">
             <el-dropdown-item
-              :style="getDropdownItemStyle(locale, 'zh')"
-              :class="['dark:!text-white', getDropdownItemClass(locale, 'zh')]"
-              @click="translationCh"
+              :style="getDropdownItemStyle(locale, 'vi')"
+              :class="['dark:!text-white', getDropdownItemClass(locale, 'vi')]"
+              @click="translationVi"
             >
-              <span class="check-zh" v-show="locale === 'zh'">
+              <span class="check-vi" v-show="locale === 'vi'">
                 <IconifyIconOffline :icon="Check" />
               </span>
-              简体中文
+              Tiếng Việt
             </el-dropdown-item>
             <el-dropdown-item
               :style="getDropdownItemStyle(locale, 'en')"
@@ -141,7 +141,7 @@ watch(
     padding: 5px 40px;
   }
 
-  .check-zh {
+  .check-vi {
     position: absolute;
     left: 20px;
   }

@@ -8,9 +8,9 @@ export function useTranslationLang(ref?: Ref) {
   const { locale, t } = useI18n();
   const route = useRoute();
 
-  function translationCh() {
-    $storage.locale = { locale: "zh" };
-    locale.value = "zh";
+  function translationVi() {
+    $storage.locale = { locale: "vi" };
+    locale.value = "vi";
     ref && handleResize(ref.value);
   }
 
@@ -31,7 +31,7 @@ export function useTranslationLang(ref?: Ref) {
     t,
     route,
     locale,
-    translationCh,
+    translationVi,
     translationEn
   };
 }
