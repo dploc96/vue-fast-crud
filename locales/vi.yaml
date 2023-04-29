@@ -77,7 +77,6 @@ menus:
   hsPiniaDocument: Pinia Doc(Embedded)
   hsRouterDocument: Vue Router Doc(Embedded)
   hsTailwindcssDocument: Tailwindcss Doc(Embedded)
-  hsAbout: About
   hsResult: Result Page
   hsSuccess: Success Page
   hsFail: Fail Page
