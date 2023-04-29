@@ -1,5 +1,5 @@
 buttons:
-  hsLoginOut: LoginOut
+  hsLoginOut: Đăng xuất
   hsfullscreen: FullScreen
   hsexitfullscreen: ExitFullscreen
   hsrefreshRoute: RefreshRoute
@@ -104,21 +104,16 @@ menus:
 status:
   hsLoad: Loading...
 login:
-  username: Username
-  password: Password
-  verifyCode: VerifyCode
-  remember: Remember Password
+  username: Tài khoản
+  password: Mật khẩu
+  verifyCode: Mã xác thực
+  remember: Nhớ mật khẩu
   sure: Sure Password
-  forget: Forget Password?
-  login: Login
-  thirdLogin: Third Login
-  phoneLogin: Phone Login
-  qRCodeLogin: QRCode Login
-  register: Register
-  weChatLogin: WeChat Login
-  alipayLogin: Alipay Login
-  qqLogin: QQ Login
-  weiboLogin: Weibo Login
+  forget: Quên mật khẩu?
+  login: Đăng nhập
+  phoneLogin: Điện thoại
+  qRCodeLogin: Mã QR
+  register: Đăng ký
   phone: Phone
   smsVerifyCode: SMS VerifyCode
   back: Back

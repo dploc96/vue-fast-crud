@@ -111,14 +111,9 @@ login:
   sure: Sure Password
   forget: Forget Password?
   login: Login
-  thirdLogin: Third Login
   phoneLogin: Phone Login
   qRCodeLogin: QRCode Login
   register: Register
-  weChatLogin: WeChat Login
-  alipayLogin: Alipay Login
-  qqLogin: QQ Login
-  weiboLogin: Weibo Login
   phone: Phone
   smsVerifyCode: SMS VerifyCode
   back: Back
